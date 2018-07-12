@@ -1,0 +1,33 @@
+{
+  "name": "assignmentweb201",
+  "version": "1.0.0",
+  "description": "Book lovers paradise",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "devserver": "Live-server",
+    "build": "webpack --mode production",
+    "compile:sass": "node-sass sass/main.scss dist/css/style.css",
+    "watch:sass": "node-sass sass/main.scss dist/css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "start:Dev": "webpack-dev-server --mode development --open"
+  },
+  "author": "Chandana Mandal",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "webpack": "^4.13.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "firebase": "^5.2.0",
+    "jquery": "^3.3.1",
+    "npm-run-all": "^4.1.3"
+  }
+}
